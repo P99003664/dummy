@@ -10,7 +10,7 @@
     <h1>Login Form:</h1>
   <div class="card">
    <div class="card-body">
-        <form method="post" action="">
+        <form method="post" action="checkuser">
             <center>
             <table border="2" width="50%" cellpadding="3">
                 <thead>
@@ -21,7 +21,7 @@
                 <tbody>
                     <tr>
                         <td>Enter UserName</td>
-                        <td><input type="text" name="userName" value="" /></td>
+                        <td><input type="text" name="employeeid" value="" /></td>
                     </tr>
                     <tr>
                         <td>Enter Password</td>
@@ -29,10 +29,10 @@
                     </tr>
                     <tr>
                         <td><input type="submit" value="Login" class = 'btn btn-primary'/></td>
-                        <td><a href = "index.jsp">Cancel</td>
+                        <td><a href = "index">Cancel</td>
                     </tr>
                     <tr>
-                        <td colspan="2">New User &nbsp;&nbsp;&nbsp;<a href="registration.jsp">SignUp</a></td>
+                        <td colspan="2">New User &nbsp;&nbsp;&nbsp;<a href="registration">SignUp</a></td>
                     </tr>
                 </tbody>
             </table>

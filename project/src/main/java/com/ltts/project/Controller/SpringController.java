@@ -29,9 +29,12 @@ public class SpringController {
 	public ModelAndView registerUser() {
 		return new ModelAndView("registration");
 	}
-	
-	@RequestMapping(value="addUser", method=RequestMethod.POST)
-	public ModelAndView adduser(HttpServletRequest req, Model model) {
+	@RequestMapping("/login")
+	public ModelAndView loginPage() {
+		return new ModelAndView("login");
+	}
+	@RequestMapping(value="adduser", method=RequestMethod.POST)
+	public ModelAndView addUser(HttpServletRequest req, Model model) {
 		ModelAndView mv=null;
 		String email=req.getParameter("email");
 		String mobile=req.getParameter("mobile");
@@ -65,5 +68,31 @@ public class SpringController {
 		
 		return mv;
 	}
+	@RequestMapping(value="checkuser", method=RequestMethod.POST)
+	public ModelAndView checkUser(HttpServletRequest req, Model model) {
+		ModelAndView mv=null;
+		String employeeid=req.getParameter("employeeid");
+		String password=req.getParameter("password");
+		
+		Employee e=ed.getEmployeeById(employeeid);
+		System.out.println(e);
+		if(e !=null) {
+		
+			if(password.equals(e.getPassword())) {
+				model.addAttribute("value", e.getEmployeename());
+				mv=new ModelAndView("welcome");
+			}
+			else {
+				model.addAttribute("msg", "Password Wrong");
+				mv=new ModelAndView("login");
+			}
+		}
+		else {
+			model.addAttribute("msg", "User Not Found Please Register");
+			mv=new ModelAndView("login");
+		}
+		return mv;
+	}
+	
 
 }

@@ -24,7 +24,7 @@
                 <tbody>
                     <tr>
                         <td>Email</td>
-                        <td><input type="text" name="email" value="" /></td>
+                        <td><input type="email" name="email" value="" /></td>
                     </tr>
                     <tr>
                         <td>Mobile</td>
@@ -32,7 +32,7 @@
                     </tr>
                     <tr>
                         <td>Password</td>
-                        <td><input type="text" name="password" value="" /></td>
+                        <td><input type="password" name="password" value="" /></td>
                     </tr>
                     <tr>
                         <td>Employee Id</td>

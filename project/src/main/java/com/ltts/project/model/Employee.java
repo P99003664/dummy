@@ -7,7 +7,7 @@ import javax.persistence.Id;
 
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Entity
 public class Employee implements Serializable{
 	/**
 	 * 
@@ -87,9 +87,6 @@ public class Employee implements Serializable{
 	}
 	public void setImmediatesupervisor(String immediatesupervisor) {
 		this.immediatesupervisor = immediatesupervisor;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
 	}
 	@Override
 	public String toString() {

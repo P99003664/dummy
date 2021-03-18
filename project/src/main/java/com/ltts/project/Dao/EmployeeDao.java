@@ -47,10 +47,8 @@ public class EmployeeDao {
 	 * public List<Member> getMembers(){ List }
 	 */
 	
-	public Employee getEmployeeById(int id) {
-		Employee e=new Employee();
-		
-		
+	public Employee getEmployeeById(String employeeid) {
+		Employee e = (Employee)sf.openSession().get(Employee.class,employeeid);
 		return e;
 	}
 	
