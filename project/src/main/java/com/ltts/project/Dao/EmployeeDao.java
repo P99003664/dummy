@@ -5,9 +5,11 @@ import javax.persistence.EntityManager;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import com.ltts.project.model.Employee;
 
+@Repository
 public class EmployeeDao {
 	
 	@Autowired

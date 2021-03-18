@@ -12,7 +12,7 @@
    <div class="card-body">
         <form method="post" action="">
             <center>
-            <table border="0" width="50%" cellpadding="3">
+            <table border="2" width="50%" cellpadding="3">
                 <thead>
                     <tr>
                         <th colspan="2">Login Page</th>

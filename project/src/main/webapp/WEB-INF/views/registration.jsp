@@ -35,10 +35,6 @@
                         <td><input type="text" name="password" value="" /></td>
                     </tr>
                     <tr>
-                        <td>User Name</td>
-                        <td><input type="text" name="user_name" value="" /></td>
-                    </tr>
-                    <tr>
                         <td>Employee Id</td>
                         <td><input type="text" name="employeeid" value="" /></td>
                     </tr>

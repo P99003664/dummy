@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Welcome to my Project</h1><br><br>
+<h1 style="background-color:powderblue;">Welcome to my Project</h1><br><br>
  <a href="login">Login</a><br><br>
 <a href="registration">Registration</a>
 </body>
